@@ -123,21 +123,21 @@ export default class VerifyLogin extends Component {
               }}>{' giây'}</Text>
             </Text>
           </Text>
-          <TouchableHighlight style={[
-            CONSTANTS.styles.shadow, {
-              marginTop: 80,
+          <TouchableHighlight style={{
+              marginTop: 10,
               marginLeft: 20,
               marginRight: 20,
-              height: 40,
-              backgroundColor: 'transparent'
-            }
-          ]} underlayColor={'transparent'} onPress={() => console.log('Tiếp tục')}>
-            <View style={{
-              flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: agri_red
-            }}>
+              paddingTop: 5,
+              paddingBottom: 5,
+              backgroundColor: 'white'
+          }} underlayColor={'transparent'} onPress={() => console.log('Tiếp tục')}>
+            <View style={[
+              CONSTANTS.styles.shadow, {
+                height: 40,
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: agri_red
+              }]}>
               <Text style={{
                 color: 'white',
                 fontSize: 14

@@ -106,25 +106,25 @@ export default class Login extends Component {
             <Ionicon name={'ios-contact-outline'} color={agri_red} size={20}/>
           </AgriTextInput>
 
-          <TouchableHighlight style={[
-            CONSTANTS.styles.shadow, {
-              marginTop: 20,
+          <TouchableHighlight style={{
+              marginTop: 10,
               marginLeft: 20,
               marginRight: 20,
-              height: 40,
-              backgroundColor: 'transparent'
-            }
-          ]} underlayColor={'transparent'} onPress={() => {
+              paddingTop: 5,
+              paddingBottom: 5,
+              backgroundColor: 'white'
+          }} underlayColor={'transparent'} onPress={() => {
             if (this._validateInput()) {
               this.props.requestLogin({phone: this.state.phone, password: this.state.password, idNumber: this.state.idNumber});
             }
           }}>
-            <View style={{
-              flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: agri_red
-            }}>
+            <View style={[
+              CONSTANTS.styles.shadow, {
+                height: 40,
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: agri_red
+              }]}>
               <Text style={{
                 color: 'white',
                 fontSize: 14
@@ -156,8 +156,10 @@ export default class Login extends Component {
           </Text>
           <TouchableHighlight style={{
             marginTop: 20,
+            marginBottom: 20,
             marginLeft: 20,
-            width: 190
+            height: 50,
+            width: 210
           }} underlayColor={'transparent'} onPress={() => Communications.phonecall('1900545527', true)}>
             <View style={{
               flexDirection: 'row',

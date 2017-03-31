@@ -13,7 +13,7 @@ const RouterWithRedux = connect()(Router);
 const store = configureStore();
 
 const RightGlobe = () => {
-  return (<Ionicon name={'ios-globe-outline'} color={'white'} size={20}/>)
+  return (<Ionicon name={'ios-globe-outline'} color={'white'} size={24}/>)
 }
 
 export default class App extends Component {
